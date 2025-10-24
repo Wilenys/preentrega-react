@@ -21,7 +21,7 @@ function App() {
      <Header />
      <Routes>
      
-     <Route path="/" element={<ItemlistContainer titulo={"Bienvenidos a mi tiendas"}/>}/>
+     <Route path="/" element={<ItemlistContainer titulo={"Bienvenidos a mi tienda"}/>}/>
      <Route path="/detail/:id" element={<ItemDetailContainer />}/>
      </Routes>
      

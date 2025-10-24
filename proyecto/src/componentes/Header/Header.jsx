@@ -1,13 +1,13 @@
-import {Nav} from "../Nav/Nav";
+import "./Header.css";
+import { Nav } from "../Nav/Nav";
 
 export const Header = () => {
-
-    return (
-    <header>
-        <h2>
-            LOGO
-        </h2>
-        <Nav />
+  return (
+    <header className="header">
+      <div className="logo-container">
+        <img src="/images/Logo.jpg" alt="Logo del sitio" className="logo" />
+      </div>
+      <Nav />
     </header>
-    );
+  );
 };
