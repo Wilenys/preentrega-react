@@ -15,7 +15,7 @@ nav ul {
 
 nav a {
   text-decoration: none;    /* quita el subrayado */
-  color: #333;              /* color del texto */
+  color: #4e4d4d;              /* color del texto */
   font-weight: 500;
   font-size: 18px;
   transition: color 0.3s;
