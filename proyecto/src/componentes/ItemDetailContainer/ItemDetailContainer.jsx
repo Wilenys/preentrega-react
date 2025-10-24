@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ItemDatail } from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 
 
@@ -7,16 +8,19 @@ export const ItemDetailContainer = () => {
 
     const [detail, setDetail] = useState({});
 
+    const {id} = useParams()
+
     useEffect(() => {
         fetch("/data/productos.json")
         .then((res) => {
             if(!res.ok){
                 throw new Error("Hubo un problema al buscar productos");
             }
+
             return res.json();
         })
         .then((data)=>{
-            const found = data.find((p)=> p.id ==="3" );
+            const found = data.find((p)=> p.id ===id );
             if (found) { 
                 setDetail(found);
 
@@ -28,7 +32,7 @@ export const ItemDetailContainer = () => {
             console.log(err);
         });
         
-    }, []);
+    }, [id]);
 
 
     return <main>

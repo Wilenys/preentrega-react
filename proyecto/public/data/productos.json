@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Aceite",
     "price": 4500,
-    "category": "Almacen",
+    "category": "almacen",
     "description": "Aceite de girasol.",
     "imageUrl": "/images/Aceite.jpg"
   },
@@ -11,14 +11,14 @@
     "id": "2",
     "name": "Arroz",
     "price": 3200,
-    "category": "Almacen",
+    "category": "almacen",
     "description": "Arroz blanco.",
     "imageUrl": "/images/Arroz.jpg"
   },
   {
     "id": "3",
     "name": "Azucar",
-    "category": "dulce",
+    "category": "almacen",
     "price": 1200,
     "description": "Azucar blanca",
     "imageUrl": "/images/azucar1.jpg"

@@ -1,15 +1,17 @@
+import { Link } from "react-router-dom";
 import "./Nav.css";
 export const Nav = () => {
     return <nav>
       <ul>
         <li>
-            <a href="./#">Inicio</a>
+            < Link to={"/category/inicio"}> Inicio </Link>
+
         </li>
         <li>
-            <a href="./#">Contacto</a>
+            < Link to={"/category/contacto"}> Contacto </Link>
         </li>
         <li>
-            <a href="./#">Productos</a>
+            < Link to={"/category/almacen"}> Almacen </Link>
         </li>
       </ul>
 

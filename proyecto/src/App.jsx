@@ -1,3 +1,4 @@
+import {BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Footer } from "./componentes/Footer/Footer";
 import { Header } from "./componentes/Header/Header";
@@ -11,19 +12,20 @@ import { ItemDetailContainer } from "./componentes/ItemDetailContainer/ItemDetai
 
 
 function App() {
- // lo que guarde de productso iba aca
-  //const prod = { nombre: "Remera", precio:1000, descripcion: "HOLA"};
-
-
-
+ 
   return (
     <>
+    <BrowserRouter>
     <div>
 
      <Header />
-     {/*<ItemlistContainer titulo={"Bienvenidos"}/>*/}
-     <ItemDetailContainer />
+     <Routes>
      
+     <Route path="/" element={<ItemlistContainer titulo={"Bienvenidos a mi tiendas"}/>}/>
+     <Route path="/detail/:id" element={<ItemDetailContainer />}/>
+     </Routes>
+     
+
      <Boton color={"green"} texto={"Siguiente Pagina"} />
 
      {/*<Formulario />*/}
@@ -34,6 +36,7 @@ function App() {
      <Footer />
            
     </div>
+    </BrowserRouter> 
     </>
   );
 };
